@@ -1,92 +1,18 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login bootstrap</title>
+    <title>Login Bootstrap</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-light"> <main class="container d-flex align-items-center justify-content-center vh-100">
+<body class="bg-light"> 
 
-    <div class="row w-100 justify-content-center">
-        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+    <main class="container d-flex align-items-center justify-content-center vh-100">
+        <div class="row w-100 justify-content-center">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
 
-            <div class="card shadow border-0 p-4">
-                <div class="card-body">
-
-                    <div class="text-center mb-4">
-                        <h2 class="fw-bold text-primary">Acesso ao site</h2>
-                        <p class="text-mutted small">Entre com email</p>
-                    </div>
-                    
-                    <form id="loginForm" class="needs-validation" novalidate>
-
-                        <div class="mb-3">
-                            <label for="email" class="form-label fw-semibold">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="icaro@gmail.com" required>
-                            <div class="invalid-feedback">
-                                Insira um email valido, por favor
-                            </div>
-                        </div>
-
-                         <div class="mb-3">
-                            <label for="password" class="form-label fw-semibold">Senha</label>
-                            <input type="password" class="form-control" id="password" placeholder="Insira a senha" required>
-                            <div class="invalid-feedback">
-                                Senha é obrigatória
-                            </div>
-                        </div>
-
-                         <div class="text-end mb-3">
-                            <a href="#" class="text-decoration-none small">Esqueci a bendita senha</a>
-                            </div>
-
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-primary btn-lg fw-bold shadow-sm">Entrar</button>
-                            </div>
-
-                        </form>
-
-                        <div class="text-center mt-4">
-                            <span class="text-secondary small">Novo aqui?</span>
-                            <a href="#" class="text-decoration-none small fw-bold">Crie sua conta</a>
-                        </div>
-
-                </div>
-            </div> </div>
-    </div>
-    
-    </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-    (() => {
-            'use strict'
-
-            const form = document.querySelector('#form-login')
-            const mensagemDiv = document.querySelector('#mensagem')
-
-            form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                    mensagemDiv.innerHTML = '<span class="text-danger small">Preencha os campos corretamente!</span>'
-                } else {
-                    
-                    event.preventDefault()
-                    mensagemDiv.innerHTML = '<span class="text-success fw-bold">Login realizado com sucesso!</span>'
-                }
-
-                form.classList.add('was-validated')
-            }, false)
-        })()
-    
-
-    </script>
-
-
-
-        
-
+                
 </body>
 </html>
