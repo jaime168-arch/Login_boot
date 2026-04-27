@@ -60,15 +60,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        (() => {
+    (() => {
             'use strict'
 
+            
             const form = document.querySelector('#loginForm')
 
+   
             form.addEventListener('submit', event => {
+                
+                
+                if (!form.checkValidity()) {
+                    event.preventDefault() 
+                    event.stopPropagation() 
+                } else {
+                    
+                    event.preventDefault()
+                    alert('Sucesso! O JavaScript validou os dados e o formulário está pronto para o Backend.')
+                }
 
-                if (!form)
-            })
+              
+                form.classList.add('was-validated')
+                
+            }, false)
+        })()
 
     </script>
 
